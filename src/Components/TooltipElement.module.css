@@ -1,0 +1,155 @@
+.tooltipContianer{
+  position: absolute;
+  left: 43%;
+  top:40%;
+}
+
+.tooltipText{
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  margin: 10rem 0;
+
+}
+
+/* setting css for the tip */
+.left,.top,.bottom,.right{
+  position:absolute;
+  border-radius: 8px;
+  text-align: center;
+  color:white;
+  background-color: black;
+  padding: 10px;
+}
+
+/* when the left side is selected to show the tip */
+.left{
+  left:-310px;
+  top:-155px;
+}
+/* when the top side is selected  to show the tip */
+.top{
+  left:0;
+  top:-240px;
+}
+/* when the bottom side is selected  to show the tip */
+.bottom{
+  left:0;
+  top:-100px;
+}
+/* when the right side is selected  to show the tip */
+.right{
+  left:230px;
+  top:-210px;
+}
+
+/* arrow icon to display in bottom */
+.bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+/* arrow icon to display in top */
+.top::after {
+  content: " ";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+/* arrow icon to display in right */
+.right::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; 
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+/* arrow icon to display in left */
+.left::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; 
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+@media screen and (max-width:1300px) {
+  .tooltipContianer{
+    top:50%;
+    left:41%;
+  }
+
+}
+
+@media screen and (max-width:976px) {
+  .tooltipContianer{
+    top:35%;
+    left:37%;
+  }
+
+}
+
+@media screen and (max-width:850px) {
+  .tooltipContianer{
+    top:40%;
+    left:35%;
+  }
+  .left{
+    left: -120px;
+    top:-210px;
+    width: 100px;
+  }
+
+}
+
+@media screen and (max-width:576px) {
+  .tooltipContianer{
+    top:50%;
+    left:40%;
+  }
+  .tooltipText{
+    text-align: center;
+    font-size:x-small;
+    font-weight: 500;
+    margin: 10rem 0;
+  
+  }
+
+  
+  /* when the left side is selected to show the tip */
+  .left{
+    left:-110px;
+    top:-179px;
+  }
+  /* when the top side is selected  to show the tip */
+  .top{
+    left:0;
+    top:-230px;
+  }
+  /* when the bottom side is selected  to show the tip */
+  .bottom{
+    left:0;
+    top:-130px;
+  }
+  /* when the right side is selected  to show the tip */
+  .right{
+    left:120px;
+    top:-191px;
+  }
+
+}

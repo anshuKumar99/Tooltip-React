@@ -1,0 +1,22 @@
+.tooltip-app{
+  height: 100vh;
+  width: 100vw;
+  background : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,247,240,1) 0%);
+  text-align: center;
+}
+
+.tooltip-hover{
+  font-size: 2rem;
+  text-align: center;
+}
+.tooltip-hover:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:576px){
+  .tooltip-hover{
+    font-size: 1rem;
+    text-align: center;
+  }
+}
