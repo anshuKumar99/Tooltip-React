@@ -1,9 +1,11 @@
+/* css for tooltipContianer */
 .tooltipContianer{
   position: absolute;
   left: 43%;
   top:40%;
 }
 
+/* css for tooltip text */
 .tooltipText{
   text-align: center;
   font-size: large;
@@ -12,7 +14,7 @@
 
 }
 
-/* setting css for the tip */
+/* setting css for the tooltip position */
 .left,.top,.bottom,.right{
   position:absolute;
   border-radius: 8px;
@@ -22,22 +24,25 @@
   padding: 10px;
 }
 
-/* when the left side is selected to show the tip */
+/* when the left side is selected to show the tooltip */
 .left{
   left:-310px;
   top:-155px;
 }
-/* when the top side is selected  to show the tip */
+
+/* when the top side is selected  to show the tooltip */
 .top{
   left:0;
   top:-240px;
 }
-/* when the bottom side is selected  to show the tip */
+
+/* when the bottom side is selected  to show the tooltip */
 .bottom{
   left:0;
   top:-100px;
 }
-/* when the right side is selected  to show the tip */
+
+/* when the right side is selected  to show the tooltip */
 .right{
   left:230px;
   top:-210px;
@@ -54,6 +59,7 @@
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
+
 /* arrow icon to display in top */
 .top::after {
   content: " ";
@@ -65,6 +71,7 @@
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
+
 /* arrow icon to display in right */
 .right::after {
   content: " ";
@@ -76,6 +83,7 @@
   border-style: solid;
   border-color: transparent black transparent transparent;
 }
+
 /* arrow icon to display in left */
 .left::after {
   content: " ";
@@ -88,6 +96,7 @@
   border-color: transparent transparent transparent black;
 }
 
+/* css for screen size less than 1300px */
 @media screen and (max-width:1300px) {
   .tooltipContianer{
     top:50%;
@@ -96,6 +105,7 @@
 
 }
 
+/* css for screen size less than 976px */
 @media screen and (max-width:976px) {
   .tooltipContianer{
     top:35%;
@@ -104,6 +114,7 @@
 
 }
 
+/* css for screen size less than 850px */
 @media screen and (max-width:850px) {
   .tooltipContianer{
     top:40%;
@@ -117,6 +128,8 @@
 
 }
 
+
+/* css for screen size less than 576px */
 @media screen and (max-width:576px) {
   .tooltipContianer{
     top:50%;
@@ -131,22 +144,22 @@
   }
 
   
-  /* when the left side is selected to show the tip */
+  /* when the left side is selected to show the tooltip */
   .left{
     left:-110px;
     top:-179px;
   }
-  /* when the top side is selected  to show the tip */
+  /* when the top side is selected  to show the tooltip */
   .top{
     left:0;
     top:-230px;
   }
-  /* when the bottom side is selected  to show the tip */
+  /* when the bottom side is selected  to show the tooltip */
   .bottom{
     left:0;
     top:-130px;
   }
-  /* when the right side is selected  to show the tip */
+  /* when the right side is selected  to show the tooltip */
   .right{
     left:120px;
     top:-191px;

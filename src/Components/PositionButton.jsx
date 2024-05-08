@@ -1,8 +1,14 @@
+// import css from PositionButton.module.css
 import styles from "./PositionButton.module.css";
+
+{
+  /* PositionButton Component to set the position of the tooltip left, right, up or down */
+}
 
 const PositionButton = ({ handleButtonOnClick }) => {
   return (
     <div className={styles.buttonContainer}>
+      {/* Buttons to set the position of the tooltip (left, right, up or down )*/}
       <button
         type="text"
         value="top"
@@ -39,4 +45,5 @@ const PositionButton = ({ handleButtonOnClick }) => {
   );
 };
 
+//exporting PositionButton component
 export default PositionButton;
